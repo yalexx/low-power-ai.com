@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://low-power-ai.com/sitemap.xml
