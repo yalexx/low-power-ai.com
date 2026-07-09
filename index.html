@@ -1,350 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="low power ai, low power ai server, 67 tops, 15w ai, energy efficient ai, openclaw hardware, nvidia jetson orin nano, always on ai server">
-<!-- redirect removed for SEO -->
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"Low power AI server: 67 TOPS at 15W on NVIDIA Jetson Orin Nano. OpenClaw pre-installed.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://clawbox.tech/clawbox-1.webp","url":"https://clawbox.tech/low-power-ai-server","offers":{"@type":"Offer","price":"549","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Josefin Sans',sans-serif;background:#0b132b;color:#d6e4f0;min-height:100vh;line-height:1.7}
-.hero{text-align:center;padding:60px 20px 40px}
-.hero h1{font-size:clamp(1.8rem,5vw,2.8rem);color:#3a86ff;margin-bottom:16px;font-weight:700}
-.hero p{max-width:660px;margin:0 auto;font-size:1.1rem;color:#8ba4c4}
-.meters{max-width:800px;margin:50px auto;padding:0 20px}
-.meter-row{background:#1c2541;border-radius:14px;padding:24px 28px;border:1px solid #2a3a5c;margin-bottom:20px}
-.meter-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.meter-label h3{color:#d6e4f0;font-size:1rem;font-weight:600}
-.meter-label .watt{color:#3a86ff;font-size:1.1rem;font-weight:700}
-.meter-bar{height:28px;background:#0b132b;border-radius:14px;overflow:hidden;position:relative}
-.meter-fill{height:100%;border-radius:14px;background:linear-gradient(90deg,#3a86ff,#5390d9);transition:width 1s ease}
-.meter-bar .tick{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:.75rem;color:#fff;font-weight:600}
-.meter-desc{margin-top:8px;color:#8ba4c4;font-size:.9rem}
-.compare{max-width:800px;margin:40px auto;padding:0 20px}
-.compare h2{text-align:center;color:#3a86ff;font-size:1.3rem;margin-bottom:24px;font-weight:600}
-.compare-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.compare-card{background:#1c2541;border-radius:14px;padding:24px;border:1px solid #2a3a5c;text-align:center}
-.compare-card .icon{font-size:2.5rem;margin-bottom:8px}
-.compare-card .watts{font-size:2rem;font-weight:700;color:#3a86ff}
-.compare-card .label{color:#8ba4c4;font-size:.9rem;margin-top:4px}
-.summary{max-width:700px;margin:30px auto;padding:0 20px;color:#8ba4c4;font-size:.95rem;text-align:center}
-.cta{text-align:center;padding:50px 20px}
-.cta h2{color:#d6e4f0;margin-bottom:20px;font-size:1.3rem;font-weight:600}
-.cta a{display:inline-block;padding:16px 40px;background:linear-gradient(135deg,#3a86ff,#5390d9);color:#fff;text-decoration:none;border-radius:12px;font-size:1.15rem;font-weight:700;transition:transform .2s}
-.cta a:hover{transform:scale(1.05)}
-.redirect{text-align:center;padding:20px;color:#4b5563;font-size:.8rem}
-</style>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}(function(){function loadGtag(){if(window.__gtagLoaded)return;window.__gtagLoaded=true;var script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id=G-Q9FY8Q06EX';document.head.appendChild(script);gtag('js',new Date());gtag('config','G-Q9FY8Q06EX');}['pointerdown','keydown','touchstart','scroll'].forEach(function(eventName){window.addEventListener(eventName,loadGtag,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(loadGtag,15000);},{once:true});})();</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Low Power AI | Local AI Hardware, Setup & Buyer Guide", "description": "Explore Low Power AI with ClawBox: private local AI hardware, buyer guidance, setup steps, specs, and why dedicated devices beat cloud subscriptions.", "url": "https://low-power-ai.com/", "about": "Low Power AI", "dateModified": "2026-04-13"}</script>
-<title>Low Power AI | Local AI Hardware, Setup & Buyer Guide</title>
-<meta name="description" content="Explore Low Power AI with ClawBox: private local AI hardware, buyer guidance, setup steps, specs, and why dedicated devices beat cloud subscriptions.">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="https://low-power-ai.com/">
-<meta property="og:title" content="Low Power AI | Local AI Hardware, Setup & Buyer Guide">
-<meta property="og:description" content="Explore Low Power AI with ClawBox: private local AI hardware, buyer guidance, setup steps, specs, and why dedicated devices beat cloud subscriptions.">
-<meta property="og:url" content="https://low-power-ai.com/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://clawbox.tech/clawbox-1.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Low Power AI | Local AI Hardware, Setup & Buyer Guide">
-<meta name="twitter:description" content="Explore Low Power AI with ClawBox: private local AI hardware, buyer guidance, setup steps, specs, and why dedicated devices beat cloud subscriptions.">
-<meta name="twitter:image" content="https://clawbox.tech/clawbox-1.webp">
-<meta name="revised" content="2026-04-13">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ClawBox Blog — AI Computers Compared</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Rubik:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Karla', sans-serif; background: #fff; color: #222; max-width: 740px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1,h2,h3 { font-family: 'Rubik', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+    h1 { font-size: 2.4rem; margin-bottom: 0.3rem; }
+    h2 { font-size: 1.5rem; margin-top: 3rem; }
+    header { margin-bottom: 3rem; }
+    header .logo { font-family: 'Rubik', sans-serif; font-size: 1.4rem; font-weight: 700; color: #10b981; text-decoration: none; }
+    header nav { float: right; }
+    header nav a { color: #666; text-decoration: none; margin-left: 1.5rem; font-weight: 600; font-size: 0.9rem; }
+    article { line-height: 1.8; font-size: 1.05rem; }
+    article p { margin-bottom: 1.3rem; color: #444; }
+    .meta { color: #999; font-size: 0.85rem; margin-bottom: 2rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 1.2rem; transition: box-shadow 0.2s; }
+    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+    .card p { font-size: 0.85rem; color: #888; margin: 0; }
+    .card .tag { display: inline-block; background: #ecfdf5; color: #10b981; padding: 0.1rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 700; margin-bottom: 0.5rem; }
+    blockquote { border-left: 3px solid #10b981; padding-left: 1rem; color: #666; font-style: italic; margin: 2rem 0; }
+    footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid #eee; color: #999; font-size: 0.85rem; }
+    @media (max-width: 640px) { .card-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
-<section class="hero">
-<h1>Low Power AI Server: 67 TOPS at Just 15 Watts</h1>
-<p>The ClawBox is a <strong>low power AI server</strong> that delivers <strong>67 TOPS</strong> of AI performance at just <strong>15 watts</strong>. Powered by NVIDIA Jetson Orin Nano, it's the most energy-efficient AI server you can run 24/7. About <strong>€15/year</strong> in electricity. <strong>€549</strong> one-time.</p>
-</section>
+  <header>
+    <a href="/" class="logo">ClawBox Blog</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/articles/">Articles</a>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
 
-<div class="meters">
-<div class="meter-row">
-<div class="meter-label"><h3>⚡ ClawBox (Jetson Orin Nano)</h3><span class="watt">15W — 67 TOPS</span></div>
-<div class="meter-bar"><div class="meter-fill" style="width:5%"></div><span class="tick">15W</span></div>
-<p class="meter-desc">4.5 TOPS per watt. No other low power AI server comes close to this efficiency ratio. Run 24/7 for ~€15/year.</p>
-</div>
-<div class="meter-row">
-<div class="meter-label"><h3>🔋 LED Light Bulb</h3><span class="watt">10W</span></div>
-<div class="meter-bar"><div class="meter-fill" style="width:3.3%;background:linear-gradient(90deg,#fbbf24,#f59e0b)"></div><span class="tick">10W</span></div>
-<p class="meter-desc">A standard LED bulb uses 10W. Your low power AI server uses barely more — while delivering 67 trillion operations per second.</p>
-</div>
-<div class="meter-row">
-<div class="meter-label"><h3>🖥️ Desktop GPU Server</h3><span class="watt">300W</span></div>
-<div class="meter-bar"><div class="meter-fill" style="width:100%;background:linear-gradient(90deg,#ef4444,#dc2626)"></div><span class="tick">300W</span></div>
-<p class="meter-desc">A typical desktop AI setup with GPU draws 300W. That's 20× the power for similar inference tasks. Not a low power AI solution.</p>
-</div>
-<div class="meter-row">
-<div class="meter-label"><h3>☁️ Cloud AI Data Center (per user)</h3><span class="watt">500W+</span></div>
-<div class="meter-bar"><div class="meter-fill" style="width:100%;background:linear-gradient(90deg,#ef4444,#991b1b)"></div><span class="tick">500W+</span></div>
-<p class="meter-desc">Cloud AI data centers consume megawatts total. A low power AI server at 15W is the sustainable, green choice for AI computing.</p>
-</div>
-</div>
+  <article>
+    <h1>What Is an AI Computer in 2026?</h1>
+    <div class="meta">July 9, 2026 · 8 min read · AI Hardware</div>
+    
+    <p>Three years ago, "AI computer" meant a workstation with an expensive GPU. Today, it means a device the size of a paperback that runs language models, automates your browser, and manages your email — on 15 watts.</p>
 
-<div class="compare">
-<h2>Power Efficiency Comparison</h2>
-<div class="compare-grid">
-<div class="compare-card">
-<div class="icon">🔇</div>
-<div class="watts">Silent</div>
-<div class="label">At 15W, runs cool & silent. No server room needed — place it on your desk, shelf, or anywhere.</div>
-</div>
-<div class="compare-card">
-<div class="icon">🔒</div>
-<div class="watts">Private</div>
-<div class="label">This low power AI server keeps all data local. NVIDIA Jetson processes everything on-device — complete privacy.</div>
-</div>
-<div class="compare-card">
-<div class="icon">💬</div>
-<div class="watts">Full-Featured</div>
-<div class="label">LLM inference, voice recognition, vision, browser automation, and multi-platform messaging — all at 15W.</div>
-</div>
-</div>
-</div>
+    <p>The shift happened quietly. NVIDIA released the Jetson Orin series. Open-source models became good enough to run locally. And a small ecosystem of companies started building dedicated AI hardware that isn't a repurposed gaming PC.</p>
 
-<p class="summary">The ClawBox proves that powerful AI doesn't need massive power consumption. 67 TOPS at 15W on NVIDIA Jetson Orin Nano — the most efficient low power AI server for personal and home use. OpenClaw Hardware: sustainable AI computing.</p>
+    <h2>The AI Computer Landscape</h2>
+    <div class="card-grid">
+      <div class="card"><span class="tag">Dedicated</span><h3>ClawBox</h3><p>Pre-configured Jetson device. Plug-and-play, 40 TOPS, OpenClaw pre-installed. €549.</p></div>
+      <div class="card"><span class="tag">DIY</span><h3>Jetson Dev Kit</h3><p>NVIDIA reference board. Requires assembly and Linux knowledge. $499 + your time.</p></div>
+      <div class="card"><span class="tag">Desktop</span><h3>Mac Mini M4</h3><p>General purpose. Runs AI well but 65W power draw. €800+. Not AI-dedicated.</p></div>
+    </div>
 
-<section style="max-width:800px;margin:40px auto;padding:0 20px">
-<h2 style="color:#3a86ff;text-align:center;margin-bottom:30px;font-size:1.6rem">Frequently Asked Questions</h2>
-<details style="background:#1c2541;border-radius:12px;margin:12px 0;border:1px solid #2a3a5c">
-<summary style="cursor:pointer;padding:20px;color:#3a86ff;font-weight:600;font-size:1.1rem">How much does this low power AI server save on electricity?</summary>
-<div style="padding:0 20px 20px;color:#d6e4f0">Low power AI server at 15W costs ~€15/year vs desktop GPU setups at 300W (~€300/year). ClawBox saves €285 annually in electricity costs alone.</div>
-</details>
-<details style="background:#1c2541;border-radius:12px;margin:12px 0;border:1px solid #2a3a5c">
-<summary style="cursor:pointer;padding:20px;color:#3a86ff;font-weight:600;font-size:1.1rem">What makes this the most efficient low power AI server?</summary>
-<div style="padding:0 20px 20px;color:#d6e4f0">67 TOPS at 15W = 4.5 TOPS per watt. NVIDIA Jetson Orin Nano is purpose-built for edge AI. No other low power AI server achieves this efficiency ratio.</div>
-</details>
-<details style="background:#1c2541;border-radius:12px;margin:12px 0;border:1px solid #2a3a5c">
-<summary style="cursor:pointer;padding:20px;color:#3a86ff;font-weight:600;font-size:1.1rem">Can a low power AI server handle real AI workloads?</summary>
-<div style="padding:0 20px 20px;color:#d6e4f0">Yes! This low power AI server runs large language models, computer vision, voice recognition, and browser automation. 67 TOPS handles serious AI tasks efficiently.</div>
-</details>
-<details style="background:#1c2541;border-radius:12px;margin:12px 0;border:1px solid #2a3a5c">
-<summary style="cursor:pointer;padding:20px;color:#3a86ff;font-weight:600;font-size:1.1rem">Does low power AI server mean compromised performance?</summary>
-<div style="padding:0 20px 20px;color:#d6e4f0">No! Low power AI doesn't mean low performance. Modern NVIDIA silicon delivers massive compute efficiency. ClawBox outperforms many high-power systems.</div>
-</details>
-<details style="background:#1c2541;border-radius:12px;margin:12px 0;border:1px solid #2a3a5c">
-<summary style="cursor:pointer;padding:20px;color:#3a86ff;font-weight:600;font-size:1.1rem">Why choose a low power AI server over cloud AI?</summary>
-<div style="padding:0 20px 20px;color:#d6e4f0">Low power AI server = zero ongoing costs, complete privacy, and environmental sustainability. Cloud AI burns megawatts in data centers and costs $20+ monthly forever.</div>
-</details>
-<details style="background:#1c2541;border-radius:12px;margin:12px 0;border:1px solid #2a3a5c">
-<summary style="cursor:pointer;padding:20px;color:#3a86ff;font-weight:600;font-size:1.1rem">Is a 15W low power AI server powerful enough for homes?</summary>
-<div style="padding:0 20px 20px;color:#d6e4f0">Absolutely! 15W is perfect for home use. Silent operation, minimal heat, 24/7 reliability. Your low power AI server delivers enterprise AI capabilities at residential efficiency.</div>
-</details>
-</section>
+    <h2>What Matters</h2>
+    <p>Not raw TOPS. Not token-per-second benchmarks. What matters is: does it work when you need it, without thinking about it? An AI computer should be like a fridge — always on, always doing its job, and you don't check its specs every morning.</p>
 
-<section style="max-width:900px;margin:40px auto;padding:0 20px">
-<h2 style="color:#3a86ff;text-align:center;margin-bottom:30px;font-size:1.6rem">Low Power AI Server Comparison</h2>
-<div style="overflow-x:auto">
-<table style="width:100%;background:#1c2541;border-radius:12px;border:1px solid #2a3a5c;border-collapse:collapse">
-<thead>
-<tr style="background:rgba(58,134,255,.1)">
-<th style="padding:16px;text-align:left;color:#3a86ff;font-weight:600">Configuration</th>
-<th style="padding:16px;text-align:center;color:#3a86ff;font-weight:600">Power Draw</th>
-<th style="padding:16px;text-align:center;color:#3a86ff;font-weight:600">AI Performance</th>
-<th style="padding:16px;text-align:center;color:#3a86ff;font-weight:600">Annual Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background:rgba(11,19,43,.7)">
-<td style="padding:14px;color:#d6e4f0">ClawBox (Low Power AI)</td>
-<td style="padding:14px;text-align:center;color:#10b981">15W</td>
-<td style="padding:14px;text-align:center;color:#10b981">67 TOPS</td>
-<td style="padding:14px;text-align:center;color:#10b981">€15</td>
-</tr>
-<tr style="background:rgba(28,37,65,.9)">
-<td style="padding:14px;color:#d6e4f0">Desktop + RTX 4090</td>
-<td style="padding:14px;text-align:center;color:#ef4444">500W</td>
-<td style="padding:14px;text-align:center;color:#3a86ff">165 TOPS</td>
-<td style="padding:14px;text-align:center;color:#ef4444">€500</td>
-</tr>
-<tr style="background:rgba(11,19,43,.7)">
-<td style="padding:14px;color:#d6e4f0">Gaming Laptop</td>
-<td style="padding:14px;text-align:center;color:#ef4444">150W</td>
-<td style="padding:14px;text-align:center;color:#ef4444">20-40 TOPS</td>
-<td style="padding:14px;text-align:center;color:#ef4444">€150</td>
-</tr>
-<tr style="background:rgba(28,37,65,.9)">
-<td style="padding:14px;color:#d6e4f0">Raspberry Pi 5</td>
-<td style="padding:14px;text-align:center;color:#10b981">5W</td>
-<td style="padding:14px;text-align:center;color:#ef4444">~1 TOPS</td>
-<td style="padding:14px;text-align:center;color:#10b981">€5</td>
-</tr>
-<tr style="background:rgba(11,19,43,.7)">
-<td style="padding:14px;color:#d6e4f0">Cloud AI (ChatGPT Plus)</td>
-<td style="padding:14px;text-align:center;color:#ef4444">500W+ (datacenter)</td>
-<td style="padding:14px;text-align:center;color:#3a86ff">High (shared)</td>
-<td style="padding:14px;text-align:center;color:#ef4444">€240+</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
+    <blockquote>The best AI computer is the one you forget you have — until it reminds you about that email you would have missed.</blockquote>
 
-<section style="max-width:800px;margin:40px auto;padding:0 20px">
-<h2 style="color:#3a86ff;text-align:center;margin-bottom:30px;font-size:1.6rem">How Low Power AI Server Works</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px">
-<div style="background:#1c2541;border-radius:12px;padding:24px;border:1px solid #2a3a5c;text-align:center">
-<div style="background:rgba(58,134,255,.2);border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#3a86ff;font-weight:700;font-size:1.4rem">1</div>
-<h3 style="color:#3a86ff;margin-bottom:12px">Connect Power</h3>
-<p style="color:#d6e4f0;font-size:.92rem">Plug in the 15W power adapter. Your low power AI server boots OpenClaw automatically.</p>
-</div>
-<div style="background:#1c2541;border-radius:12px;padding:24px;border:1px solid #2a3a5c;text-align:center">
-<div style="background:rgba(58,134,255,.2);border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#3a86ff;font-weight:700;font-size:1.4rem">2</div>
-<h3 style="color:#3a86ff;margin-bottom:12px">Silent Operation</h3>
-<p style="color:#d6e4f0;font-size:.92rem">Low power AI server runs cool and silent. Place anywhere — desk, shelf, closet.</p>
-</div>
-<div style="background:#1c2541;border-radius:12px;padding:24px;border:1px solid #2a3a5c;text-align:center">
-<div style="background:rgba(58,134,255,.2);border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#3a86ff;font-weight:700;font-size:1.4rem">3</div>
-<h3 style="color:#3a86ff;margin-bottom:12px">Link Messaging</h3>
-<p style="color:#d6e4f0;font-size:.92rem">Connect your low power AI server to Telegram, WhatsApp, or Discord for remote access.</p>
-</div>
-<div style="background:#1c2541;border-radius:12px;padding:24px;border:1px solid #2a3a5c;text-align:center">
-<div style="background:rgba(58,134,255,.2);border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#3a86ff;font-weight:700;font-size:1.4rem">4</div>
-<h3 style="color:#3a86ff;margin-bottom:12px">Run 24/7</h3>
-<p style="color:#d6e4f0;font-size:.92rem">Enjoy always-on AI with minimal electricity cost. Perfect low power AI server for continuous operation.</p>
-</div>
-</div>
-</section>
+    <p><a href="/articles/">← Back to articles</a></p>
+  </article>
 
-<section style="max-width:800px;margin:40px auto;padding:0 20px">
-<h2 style="color:#3a86ff;text-align:center;margin-bottom:30px;font-size:1.6rem">Related Resources</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:center">
-<a href="https://dedicated-ai-hardware.com" style="display:block;background:#1c2541;border-radius:12px;padding:20px;border:1px solid #2a3a5c;color:#3a86ff;text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-<div style="font-size:1.8rem;margin-bottom:8px">⚡</div>
-<div style="font-weight:600">Dedicated AI Hardware</div>
-<div style="color:#d6e4f0;opacity:.7;font-size:.85rem">Professional AI workstations</div>
-</a>
-<a href="https://jetson-ai-box.com" style="display:block;background:#1c2541;border-radius:12px;padding:20px;border:1px solid #2a3a5c;color:#3a86ff;text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-<div style="font-size:1.8rem;margin-bottom:8px">🚀</div>
-<div style="font-weight:600">Jetson AI Box</div>
-<div style="color:#d6e4f0;opacity:.7;font-size:.85rem">NVIDIA Jetson AI hardware</div>
-</a>
-<a href="https://local-ai-box.com" style="display:block;background:#1c2541;border-radius:12px;padding:20px;border:1px solid #2a3a5c;color:#3a86ff;text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-<div style="font-size:1.8rem;margin-bottom:8px">🏠</div>
-<div style="font-weight:600">Local AI Box</div>
-<div style="color:#d6e4f0;opacity:.7;font-size:.85rem">On-premises AI solutions</div>
-</a>
-<a href="https://clawbox.tech/compare" style="display:block;background:#1c2541;border-radius:12px;padding:20px;border:1px solid #2a3a5c;color:#3a86ff;text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-<div style="font-size:1.8rem;margin-bottom:8px">⚖️</div>
-<div style="font-weight:600">Compare AI Hardware</div>
-<div style="color:#d6e4f0;opacity:.7;font-size:.85rem">ClawBox vs alternatives</div>
-</a>
-<a href="https://clawbox.tech/faq" style="display:block;background:#1c2541;border-radius:12px;padding:20px;border:1px solid #2a3a5c;color:#3a86ff;text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-<div style="font-size:1.8rem;margin-bottom:8px">❓</div>
-<div style="font-weight:600">FAQ</div>
-<div style="color:#d6e4f0;opacity:.7;font-size:.85rem">Common questions answered</div>
-</a>
-<a href="https://clawbox.tech/setup-guide" style="display:block;background:#1c2541;border-radius:12px;padding:20px;border:1px solid #2a3a5c;color:#3a86ff;text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-<div style="font-size:1.8rem;margin-bottom:8px">📖</div>
-<div style="font-weight:600">Setup Guide</div>
-<div style="color:#d6e4f0;opacity:.7;font-size:.85rem">Easy installation steps</div>
-</a>
-</div>
-</section>
-
-<section class="cta">
-<h2>Low Power AI Server — €549</h2>
-<a href="https://clawbox.tech/" target="_blank">Get ClawBox — €549 →</a>
-</section>
-
-
-<div class="related-sites" style="text-align:center;padding:30px 20px;border-top:1px solid rgba(255,107,53,0.15)">
-  <p style="color:#6b7280;font-size:.85rem;margin-bottom:10px">Related Resources:</p>
-  <a href="https://openclaw-hardware.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">OpenClaw Hardware</a>
-  <a href="https://ai-assistant-box.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">AI Assistant Box</a>
-  <a href="https://local-ai-box.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">Local AI Box</a>
-</div>
-<!-- redirect text removed for SEO -->
-<div class="related-resources" style="margin-top:2rem;padding:1rem;border-top:1px solid #eee;">
-<p><strong>Related Resources:</strong></p>
-<ul>
-<li><a href="https://openclaw-hardware.com">openclaw-hardware.com</a></li>
-<li><a href="https://clawbox.tech">clawbox.tech</a></li>
-<li><a href="https://jetson-ai-assistant.com">jetson-ai-assistant.com</a></li>
-<li><a href="https://self-hosted-ai-assistant.com">self-hosted-ai-assistant.com</a></li>
-<li><a href="https://ai-assistant-box.com">ai-assistant-box.com</a></li>
-</ul>
-</div>
-<div class="main-cta" style="margin:1rem 0;text-align:center;"><a href="https://clawbox.tech" style="display:inline-block;background:#2563eb;color:#fff;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:bold;">Buy ClawBox — €549</a></div>
-
-<section style="padding:40px 20px;max-width:800px;margin:0 auto">
-<h2 style="font-size:1.4rem;font-weight:700;margin-bottom:16px;color:#e2e8f0">ClawBox Network</h2>
-<p style="color:#94a3b8;margin-bottom:16px;font-size:0.9rem">Explore the ClawBox ecosystem — AI hardware, guides, and resources:</p>
-<ul style="columns:2;column-gap:24px;list-style:none;padding:0">
-<li><a href="http://home-ai-assistant.com/" title="home ai assistant — ClawBox AI Hardware">home ai assistant</a></li><li><a href="http://private-ai-hardware.com/" title="private ai hardware — ClawBox AI Hardware">private ai hardware</a></li><li><a href="http://ai-agent-server.com/" title="ai agent server — ClawBox AI Hardware">ai agent server</a></li><li><a href="http://clawbox.nl/" title="clawbox nl — ClawBox AI Hardware">clawbox nl</a></li><li><a href="http://clawbox.gg/" title="clawbox gg — ClawBox AI Hardware">clawbox gg</a></li><li><a href="http://ai-assistant-box.com/" title="ai assistant box — ClawBox AI Hardware">ai assistant box</a></li><li><a href="http://clawboxshop.com/" title="clawboxshop — ClawBox AI Hardware">clawboxshop</a></li><li><a href="http://clawboxkit.com/" title="clawboxkit — ClawBox AI Hardware">clawboxkit</a></li><li><a href="http://no-cloud-ai.com/" title="no cloud ai — ClawBox AI Hardware">no cloud ai</a></li><li><a href="http://clawboxcloud.com/" title="clawboxcloud — ClawBox AI Hardware">clawboxcloud</a></li><li><a href="http://openclaw-discord.com/" title="openclaw discord — ClawBox AI Hardware">openclaw discord</a></li><li><a href="http://openclawos.info/" title="openclawos — ClawBox AI Hardware">openclawos</a></li>
-<li><a href="https://clawbox.tech/mac-mini-alternative" title="ClawBox vs Mac Mini — AI Hardware Comparison"><strong>ClawBox vs Mac Mini</strong></a></li>
-<li><a href="https://clawbox.tech/" title="ClawBox Price — AI Hardware Starting at €549">ClawBox Price — €549</a></li>
-<li><a href="https://clawbox.tech/" title="ClawBox Official Store — Buy AI Hardware"><strong>🏠 Official Store — clawbox.tech</strong></a></li>
-</ul>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- SEO:GUIDE-LINK:START -->
-<section id="seo-guide-link" style="max-width:980px;margin:0 auto;padding:0 20px 48px;">
-  <div style="border:1px solid rgba(148,163,184,0.35);border-radius:16px;padding:24px;background:rgba(15,23,42,0.04);">
-    <h2 style="margin:0 0 10px;font-size:1.5rem;line-height:1.3;">Read the full Low Power AI guide</h2>
-    <p style="margin:0 0 14px;line-height:1.7;">See setup steps, internal FAQs, buyer questions, and practical advice for low power ai before you commit to a local AI hardware stack.</p>
-    <a href="/guide.html" style="font-weight:700;">Open the Low Power AI guide</a>
-  </div>
-</section>
-<!-- SEO:GUIDE-LINK:END -->
+  <footer>
+    <p>ClawBox Blog · Independent writing about AI hardware · No ads, no tracking</p>
+  </footer>
 </body>
-
-<!-- Redirect Popup -->
-<div id="redirectPopup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center;padding:20px;box-sizing:border-box">
-<div style="background:#121a2e;border:1px solid rgba(255,107,53,0.3);border-radius:16px;padding:28px 20px;max-width:420px;width:100%;box-sizing:border-box;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.5)">
-<h2 style="color:#fff;font-size:clamp(1.1rem,4vw,1.5rem);margin:0 0 12px;font-weight:700">🚀 Want to see ClawBox in action?</h2>
-<p style="color:#9ca3af;margin:0 0 8px;font-size:1rem">Visit the official ClawBox store for full specs, demos, and ordering.</p>
-<p id="countdownText" style="color:#ff6b35;margin:0 0 24px;font-size:0.9rem">Redirecting in <span id="countdown">10</span> seconds...</p>
-<div style="display:flex;gap:10px;justify-content:center;flex-direction:column;align-items:center">
-<a href="https://clawbox.tech/" id="acceptBtn" style="display:inline-block;padding:12px 24px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;text-decoration:none;border-radius:12px;font-size:1.05rem;font-weight:600;transition:transform .2s">Yes, take me there →</a>
-<button id="cancelBtn" onclick="closePopup()" style="padding:12px 24px;background:transparent;color:#9ca3af;border:1px solid #374151;border-radius:12px;font-size:1.05rem;cursor:pointer;transition:all .2s">No thanks, stay here</button>
-</div>
-</div>
-</div>
-<script>
-(function(){
-var shown=false,timer=null,count=10;
-function showPopup(){
-if(shown)return;shown=true;
-var p=document.getElementById('redirectPopup');
-p.style.display='flex';
-count=10;
-document.getElementById('countdown').textContent=count;
-timer=setInterval(function(){
-count--;
-document.getElementById('countdown').textContent=count;
-if(count<=0){clearInterval(timer);window.location.href='https://clawbox.tech/';}
-},1000);
-}
-window.closePopup=function(){
-clearInterval(timer);
-document.getElementById('redirectPopup').style.display='none';
-};
-window.addEventListener('scroll',function(){
-if((window.innerHeight+window.scrollY)>=document.body.offsetHeight-100){showPopup();}
-});
-})();
-</script>
-<section style="padding:30px 20px;max-width:800px;margin:0 auto">
-<h2 style="font-size:1.2rem;font-weight:700;color:#e2e8f0;margin-bottom:12px">OpenClaw Hardware Requirements</h2>
-<p style="color:#94a3b8;font-size:0.9rem">What hardware do you need for OpenClaw? See the full <a href="https://clawbox.tech/openclaw-hardware-requirements" title="OpenClaw Hardware Requirements 2026">hardware requirements guide</a> — minimum specs, recommended setups, and why Jetson at 15W is the sweet spot.</p>
-
-<p style="margin:1.8em 0 1em;font-size:0.9em;color:#6b7280;line-height:1.6;">One option worth considering is <a href="https://clawbox.tech/?utm_source=low-power-ai.com&utm_medium=backlink&utm_campaign=low-power-ai-com" target="_blank" rel="noopener">ClawBox</a>, a purpose-built AI device running OpenClaw on NVIDIA Jetson.</p>
-</section>
 </html>
